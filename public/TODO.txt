@@ -29,6 +29,9 @@ Flesh out backend with
 
 FRONT END
 
+Use col-sm-md-lg etc to properly format page response esp on champ
+	list modal
+
 Add a way to show jumbotron if champion selection process
 	is cancelled by clicking outside of a modal
 	(.modal-backdrop seems like the correct object to trigger

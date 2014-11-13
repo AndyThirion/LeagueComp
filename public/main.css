@@ -36,3 +36,12 @@
 	left: 25%;
 	box-shadow: 0px 0px 3px 3px #333;
 }
+
+.jumbotron {
+	margin-left: 7%;
+	margin-right: 7%;
+}
+
+/*.champion-details-modal {
+	top: 10%;
+}*/

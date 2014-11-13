@@ -1,14 +1,23 @@
 // Function to slide the jumbrotron up past top of screen
 // and after that, spawn champ select modal
 var jumbotronToModal = function(){
-	$('.space20pct').slideToggle();
-	$('.jumbotron').slideToggle();
+	// $('.space20pct').slideToggle();
+	// $('.jumbotron').animate({"margin-left": '10%', "margin-right": '10%'}, 600)
+	// $('.jumbotron').slideToggle();
 }
 
 
 
 $(document).on('ready', function() {
 
+
+	// User Login
+	// Currently spoofed, need to add
+	//   backend oauth2
+	$('#btn-sign-in').on('click', function(e){
+		e.preventDefault();
+		console.log("Login button clicked")
+	})
 
 	// Switch from Jumbotron view to Modal
 	$('#show-modal').on('click', function(){
@@ -65,7 +74,8 @@ $(document).on('ready', function() {
 		var champName = $(this).closest('div').find('h4').text()
 		$('.champion-details-modal').find('.modal-title').text(champName)
 		var imageSrc = champion.image[champName.toLowerCase()]
-		$('#champion-details').prepend('<img class="center-block img-circle" src="'+imageSrc+'"/>')
+		$('#champion-details').find('#champion-details-main-image').remove();
+		$('#champion-details').prepend('<img id="champion-details-main-image" class="center-block img-circle" src="'+imageSrc+'"/>')
 	})
 
 	// **INSERT HERE** //
