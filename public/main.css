@@ -1,0 +1,38 @@
+.space20 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.space20pct {
+	padding-top: 12%;
+}
+
+.absolute {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: -1;
+}
+
+.box-shadow {
+	box-shadow: 0px 0px 10px 10px #111;
+}
+
+.light-grey {
+	background-color: #ddd;
+}
+
+.white-text {
+	color: #ddd;
+}
+
+.highlighted {
+	opacity: .5;
+}
+
+#select-button {
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	box-shadow: 0px 0px 3px 3px #333;
+}

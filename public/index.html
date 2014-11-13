@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled</title>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <!-- <img src="http://www.twinfinite.net/wp-content/uploads/2014/09/League-of-Legends.jpg" class="img-responsive absolute"> -->
+
+    <img src="http://daydull.com/wp-content/uploads/2014/07/league_of_legends_wallpaper_by_rikkutenjouss-d64lsl0.png" class="img-responsive absolute">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      
+
+      <!-- Navbar in Header -->
+      <div class="container">
+        <div class="navbar-header">
+
+          <!-- Collapsed Dropdown Button -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controlls="navbar">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Always displayed -->
+          <a href="#" class="navbar-brand">
+            <span class="white-text">LeagueComp</span>
+          </a>
+
+        </div>
+
+        <!-- Portion of navbar that collapses -->
+        <div class="navbar-collapse collapse" id="navbar">
+          <form role="form" class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <input type="text" placeholder="Password" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-success">Sign In</button>
+
+          </form>
+        </div>
+      </div>
+
+    </nav>
+
+
+    <div class="space20pct"></div>
+
+    <!-- Modal - Champion-Details-Modal -->
+    <div class="modal fade champion-details-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content light-grey">
+          
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <!-- <div class="row">
+              <div class="col-sm-4">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Champion">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-4"> -->
+            <h2 class="modal-title text-center" id="champion-modal-label">Placeholder Title</h2>
+              <!-- </div> 
+            </div> -->
+          </div>
+          
+          <!-- Modal Body -->
+          <div class="modal-body" id="champion-details">
+            <div class="row">
+              <div class="col-sm-6">
+                <h3 class="text-center">Synergies</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum libero necessitatibus aliquid nesciunt impedit assumenda ratione quasi saepe, dolores, debitis, temporibus sapiente! Commodi pariatur, nihil quos possimus maxime dolorum laudantium!</p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="text-center">Team Comps</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eligendi, distinctio iure eum illum velit architecto veniam, sit tempore quam maxime similique! Eius tempore autem provident, nemo accusantium, nesciunt debitis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal - Champion-List-Modal -->
+    <div class="modal fade champion-list-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content light-grey">
+          
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Champion">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <h3 class="modal-title text-center" id="myModalLabel">Select Your Champion</h3>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Modal Body -->
+          <div class="modal-body" id="champion-list">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Jumbotron -->
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="container col-sm-8">
+        <div class="jumbotron light-grey box-shadow text-center">
+          <h1>Greetings, Summoner!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa soluta ipsum officia excepturi similique asperiores necessitatibus quidem odio sint explicabo quasi minima, voluptate, repudiandae rem ad nihil perspiciatis. Quas, quae.</p>
+          <div class="space20"></div>
+          <div class="row">
+              <!-- <div class="col-sm-1"></div> -->
+              <div class="col-sm-4"></div>
+              <div class="col-sm-2">
+                <button type="button" class="navbar-brand btn btn-primary" data-toggle="modal" id="show-modal" data-target=".champion-list-modal">Pick a Champion »</button>
+              </div>
+              <div class="col-sm-5"</div>
+              <!-- <a href="./champselect.html" class="btn btn-lg btn-primary col-sm-3">Pick a Champion »</a> -->
+              <!-- <div class="col-sm-4"></div>
+              <a href="./teamcomp.html" class="btn btn-lg btn-primary col-sm-3">Build a Team »</a> -->
+              <!-- <div class="col-sm-1"></div> -->
+          </div>
+          <div class="space20"></div>
+
+        </div>
+      </div>
+
+      <div class="col-sm-2"></div>
+      
+    </div>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.js"></script>
+    <script src="/javascript/main.js"></script>
+    <script src="/javascript/champions.js"></script>
+
+  </body>
+</html>

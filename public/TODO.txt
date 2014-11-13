@@ -1,0 +1,90 @@
+BACK END
+
+Flesh out backend with
+	main index route
+	
+	data route
+		coded to data object
+		
+		//This will need to be redesigned depending on
+		   final object structure
+		/data/:<champion or teamcomp/:key
+			This will be used for $.get requests to
+			 grab data from backend
+	
+	Store data as JSON object to start
+		Finalize data structure and contents
+		See "Finalize JSON data object" in Front End
+
+	Write submission process to automatically update
+	  data object.
+	  	Allow submission from a form page accessible to trusted users
+
+	Implement mongodb later
+	
+	Add user authentication using Oauth2
+	Include submission form for trusted users
+		(Platinum and above)
+
+
+FRONT END
+
+Add a way to show jumbotron if champion selection process
+	is cancelled by clicking outside of a modal
+	(.modal-backdrop seems like the correct object to trigger
+		but I haven't made it work yet)
+
+Style modals to auto blur background
+
+Add text content to main jumbotron
+
+Style "icon select" from inside modal
+	on selected
+		opacity to 75%
+		OR border
+		AND height bump css animation
+
+
+
+Complete champion icon select event that
+  populates a new modal with design specs 
+  currently in main.js
+
+Create teamcomp modal modeled after champselect
+	List of team comps with a picture and short desc
+	  in 4/4/4 cols (pattern after thumbnail list in bs)
+
+Finalize JSON data object
+	data structure
+	contents
+		full (strong) champ list
+			with synergies
+			with working templated icon display code
+				No more if (name == x) workarounds
+			with tags for which team comps they work in
+		team comp list
+			pattern data and structure from final/data.JSON
+
+
+DATA OBJECT
+Characters:
+	Write full list of characters to be included for beta
+	Each character entry in data object needs:
+		name: "Lee Sin"
+		key: "leesin"
+		tagline: "The Blind Monk"
+		img: "http://leagueapedia.com/leesin.png"
+		synergies: ["yasuo", "other champion"]
+		synergiesdesc: "Lee sin excells when paired with champions that
+					are strong early and can make plays during laning
+					phase. Alternately he can be used to protect weak
+					laners during their most vulnerable time"
+					//Short description of how he pairs with other champs
+		teamcomps: ["pick", "hard engage", "splitpush"]
+					OR
+				   {pick: "description of why", hardEngage: "desc of why"}
+		teamcompsdesc: "Lee Sin is perfect for team comps that require
+						early power and mobility, as well as strong
+						initiation with Dragon's Rage"
+	CONSIDER BUILDING QUICK HTML FORM TO EASILY INPUT THIS AND
+	   SEND BACK A JSON.TOSTRING
